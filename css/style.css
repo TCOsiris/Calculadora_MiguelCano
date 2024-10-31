@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.contenedor {
+    padding: 20px;
+    background-image: url("../images/calculadora.jpg");
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 500px;
+    width: 350px;
+}
+
+.calculadora {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(6, 60px);
+    grid-template-areas:
+        "W W W W"
+        "E E F A"
+        "S T U B"
+        "J K R A"
+        "G H I D"
+        "V V Punto D";
+    justify-content: center;
+}
+
+.W {
+    grid-column: span 4;
+    height: 60px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.btn {
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+
+.operador {
+    background-color: #ffa500;
+}
+
+.igual {
+    
+    background-color: #32cd32;
+}
+
+.igual:hover {
+    background-color: #2eb82e;
+}
+
+.limpiar {
+    grid-column: span 2;
+    background-color: #ff6347;
+}
+
+
+.punto {
+    background-color: #87ceeb;
+}
+
+.punto:hover {
+    background-color: #00bfff;
+}
